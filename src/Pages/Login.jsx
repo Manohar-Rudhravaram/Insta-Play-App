@@ -63,7 +63,7 @@ export default function Login() {
     };
 
     return (
-        <div className={signinStyles.container}>
+        <div >
             <Nav />
             <div className={signinStyles.signincontainer}>
                 <div className={signinStyles.signinform}>

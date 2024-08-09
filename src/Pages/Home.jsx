@@ -17,7 +17,6 @@ export default function Home() {
     const { search, searchLoader } = useContext(searchContext); //context data
     const navigate = useNavigate();
     // Conditional check for data
-    //
     const movies = search.keyword ? search.result : data?.results;
     useEffect(() => {
         const access_token = sessionStorage.getItem("token"); //checking user is logged in or not
@@ -26,7 +25,7 @@ export default function Home() {
         }
     }, [])
 
-    //navigating to single page of movie details with unique id
+    //navigate to movie details with unique id
     function detailsHandler(id) {
         navigate(`/movies/${id}`)
     }
