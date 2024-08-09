@@ -1,0 +1,191 @@
+.signincontainer {
+    height: 555px;
+    background: #0C111B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.signinform {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 560px;
+    height: 370px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 0px 0px 0px rgba(63, 63, 68, 0.05);
+}
+
+.signintext {
+    color: #263238;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    letter-spacing: 0.24px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.signinbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.signinpara {
+    margin-left: 20px;
+    color: #546E7A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.02px;
+}
+
+label {
+    position: absolute;
+    top: 12px;
+    left: 8px;
+    font-size: 16px;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    background: #f0f0f0;
+    padding: 0 4px;
+}
+
+.signinbtn {
+    margin-left: 20px;
+    width: 465px;
+    background-color: #FF7D65;
+    border-radius: 16px;
+    padding: 10px;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+}
+
+.signinbox .input {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25vh;
+    margin-left: 20px;
+}
+
+.signinbox div input {
+    width: 450px;
+    height: 40px;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.2s;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.signinbox div span {
+    color: red;
+    font-size: small;
+}
+
+.signinbox div input:focus {
+    border: 3px solid rgb(207, 52, 52);
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        height: 100vh;
+    }
+
+    .signincontainer {
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background: #0C111B;
+        height: 90vh;
+    }
+
+    .signinform {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        box-shadow: 0px 0px 0px 0px rgba(63, 63, 68, 0.05);
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #0C111B;
+    }
+
+    .signintext {
+        color: #FFF;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .signinbox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: 350px;
+    }
+
+    .signinbox div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .signinbox div input {
+        width: 100%;
+        border: 3px solid #ccc;
+        transition: border 0.2s;
+        outline: none;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 400;
+        border-radius: 8px;
+        border: 1px solid #164AB2;
+        background: #182135;
+        color: #FFF;
+    }
+
+    .signinbox input::placeholder{
+        color: #FFF;
+    }
+
+    .signinbox div span {
+        color: red;
+        font-size: 12px;
+    }
+
+    .button{
+        margin-left: 10px;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .signinbtn{
+        width: 100%; 
+    }
+}
